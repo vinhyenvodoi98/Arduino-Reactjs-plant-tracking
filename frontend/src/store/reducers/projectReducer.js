@@ -1,5 +1,6 @@
 const initState = {
-  data: null
+  data: null,
+  realtime: null
 };
 
 const projectReducer = (state = initState, action) => {
@@ -11,6 +12,11 @@ const projectReducer = (state = initState, action) => {
       return {
         ...state,
         data: action.data
+      };
+    case 'GET_REALTIME':
+      return {
+        ...state,
+        realtime: action.realtime
       };
     default:
       return state;

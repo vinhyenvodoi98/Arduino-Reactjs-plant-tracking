@@ -1,5 +1,8 @@
 import firebase from '../../config';
 
+export const GET_DATA = 'GET_DATA';
+export const GET_REALTIME = 'GET_REALTIME';
+
 export const createProject = project => {
   return (dispatch, getState) => {
     // make async call to database
@@ -7,7 +10,6 @@ export const createProject = project => {
   };
 };
 
-export const GET_DATA = 'GET_DATA';
 export const getData = () => async (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
 
@@ -24,9 +26,12 @@ export const getData = () => async (dispatch, getState, { getFirestore }) => {
       });
     });
 
-  const wordRef = await firebase.database().ref('dht11-5a0f1');
+  const wordRef = await firebase.database().ref('sensor');
   wordRef.on('value', snapshot => {
-    let words = snapshot.val();
-    console.log(words);
+    let realtime = snapshot.val();
+    dispatch({
+      type: GET_REALTIME,
+      realtime
+    });
   });
 };
