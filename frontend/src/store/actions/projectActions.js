@@ -1,3 +1,5 @@
+import firebase from '../../config';
+
 export const createProject = project => {
   return (dispatch, getState) => {
     // make async call to database
@@ -21,4 +23,10 @@ export const getData = () => async (dispatch, getState, { getFirestore }) => {
         data
       });
     });
+
+  const wordRef = await firebase.database().ref('dht11-5a0f1');
+  wordRef.on('value', snapshot => {
+    let words = snapshot.val();
+    console.log(words);
+  });
 };

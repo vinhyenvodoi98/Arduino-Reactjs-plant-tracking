@@ -1,6 +1,6 @@
 var firebase = require('firebase/app');
 require('firebase/firestore');
-require('firebase/auth');
+require('firebase/database');
 
 var config = {
   apiKey: 'AIzaSyBIYrzhuHpo-BQ6j1_95dCftjg2bV5KnKs',
