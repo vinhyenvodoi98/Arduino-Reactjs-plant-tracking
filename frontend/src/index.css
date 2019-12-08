@@ -13,3 +13,7 @@ code {
 .page {
   height: 70vh;
 }
+
+.apexcharts-canvas {
+  margin: auto;
+}

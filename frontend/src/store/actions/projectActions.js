@@ -14,8 +14,8 @@ export const getData = () => async (dispatch, getState, { getFirestore }) => {
   const firestore = getFirestore();
 
   await firestore
-    .collection('user')
-    .doc('JhmdvPQlR2AuUX04gE6t')
+    .collection('sensor')
+    .doc('8-12')
     .get()
     .then(async doc => {
       var data = doc.data();

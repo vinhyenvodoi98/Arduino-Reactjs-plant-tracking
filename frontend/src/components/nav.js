@@ -18,6 +18,9 @@ function Nav() {
               <li>
                 <Link to='/showRealtime'>Plant Your Tree</Link>
               </li>
+              <li>
+                <Link to='/showChar'>7days Chart</Link>
+              </li>
             </ul>
           </div>
         </div>
