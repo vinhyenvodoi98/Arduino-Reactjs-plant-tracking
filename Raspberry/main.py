@@ -20,7 +20,7 @@ config = {
 # database realtime
 firebase = pyrebase.initialize_app(config)
 
-db = firebase.database()
+realtimedb = firebase.database()
 
 # firestore
 
@@ -144,8 +144,8 @@ while True:
     dt = datetime.datetime.today()
     humidity, temperature = Adafruit_DHT.read(DHT_SENSOR, DHT_PIN)
     if humidity is not None and temperature is not None:
-        data = {"humidity": humidity,  "temperature": temperature}
-        db.child("sensor").set(data)
+        rtdata = {"humidity": humidity,  "temperature": temperature}
+        realtimedb.child("sensor").set(rtdata)
         print("Temp={0:0.1f}C Humidity={1:0.1f}%".format(
             temperature, humidity))
 
@@ -154,8 +154,8 @@ while True:
             currentHour = dt.hour
         else:
             # add data to data
-            data["data"][currentHour]["humidity"].append(15)
-            data["data"][currentHour]["temperature"].append(15)
+            data["data"][currentHour]["humidity"].append(humidity)
+            data["data"][currentHour]["temperature"].append(temperature)
 
         if currendDay != dt.day:
             currendDay = dt.day
