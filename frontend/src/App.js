@@ -9,7 +9,7 @@ import Nav from './components/nav';
 import Body from './components/body';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import RealtimeGraph from './components/realtimeGraph';
-import ColumnChar from './components/columnChar';
+import ColumnPage from './components/columnPage';
 
 function App() {
   useEffect(() => {
@@ -30,7 +30,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Body} />
           <Route exact path='/showRealtime' component={RealtimeGraph} />
-          <Route exact path='/showChar' component={ColumnChar} />
+          <Route exact path='/showChar' component={ColumnPage} />
         </Switch>
       </BrowserRouter>
     </div>
