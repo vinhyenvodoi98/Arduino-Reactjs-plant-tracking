@@ -252,7 +252,7 @@ export default function TemperatureColumn() {
       },
       series: [
         {
-          name: 'Inflation',
+          name: 'Temperature',
           data: humiarr
         }
       ]

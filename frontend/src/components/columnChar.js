@@ -119,7 +119,7 @@ export default function ColumnChar() {
     },
     series: [
       {
-        name: 'Inflation',
+        name: 'Humidity',
         data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       }
     ]
@@ -252,7 +252,7 @@ export default function ColumnChar() {
       },
       series: [
         {
-          name: 'Inflation',
+          name: 'Humidity',
           data: humiarr
         }
       ]
