@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Raspberry-Reactjs-plant-tracking/static/css/main.55d79715.chunk.css",
+    "main.js": "/Raspberry-Reactjs-plant-tracking/static/js/main.a52c52c4.chunk.js",
+    "main.js.map": "/Raspberry-Reactjs-plant-tracking/static/js/main.a52c52c4.chunk.js.map",
+    "runtime-main.js": "/Raspberry-Reactjs-plant-tracking/static/js/runtime-main.60179c3c.js",
+    "runtime-main.js.map": "/Raspberry-Reactjs-plant-tracking/static/js/runtime-main.60179c3c.js.map",
+    "static/css/2.0624914a.chunk.css": "/Raspberry-Reactjs-plant-tracking/static/css/2.0624914a.chunk.css",
+    "static/js/2.a8a4a612.chunk.js": "/Raspberry-Reactjs-plant-tracking/static/js/2.a8a4a612.chunk.js",
+    "static/js/2.a8a4a612.chunk.js.map": "/Raspberry-Reactjs-plant-tracking/static/js/2.a8a4a612.chunk.js.map",
+    "index.html": "/Raspberry-Reactjs-plant-tracking/index.html",
+    "precache-manifest.3684d760e44f613bcb1e0e74bca28b47.js": "/Raspberry-Reactjs-plant-tracking/precache-manifest.3684d760e44f613bcb1e0e74bca28b47.js",
+    "service-worker.js": "/Raspberry-Reactjs-plant-tracking/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/Raspberry-Reactjs-plant-tracking/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.55d79715.chunk.css.map": "/Raspberry-Reactjs-plant-tracking/static/css/main.55d79715.chunk.css.map",
+    "static/media/Modernica.jpg": "/Raspberry-Reactjs-plant-tracking/static/media/Modernica.34b33edd.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.60179c3c.js",
+    "static/css/2.0624914a.chunk.css",
+    "static/js/2.a8a4a612.chunk.js",
+    "static/css/main.55d79715.chunk.css",
+    "static/js/main.a52c52c4.chunk.js"
+  ]
+}
