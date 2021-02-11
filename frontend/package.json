@@ -5,7 +5,7 @@
   "homepage": "https://vinhyenvodoi98.github.io/Raspberry-Reactjs-plant-tracking/",
   "dependencies": {
     "@nivo/pie": "^0.59.1",
-    "apexcharts": "^3.10.1",
+    "apexcharts": "^3.24.0",
     "bootstrap": "^4.3.1",
     "firebase": "^5.9.3",
     "react": "^16.12.0",
